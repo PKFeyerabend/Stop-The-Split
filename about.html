@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About — Stop The Split</title>
+<style>
+:root{
+  --bg:#f7f8fa; --card:#ffffff; --ink:#15171c; --sub:#5b6270; --line:#e3e6ea;
+  --accent:#154734; --accent2:#0a2e22;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; }
+}
+:root[data-theme="dark"]{ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; }
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;align-items:center;gap:10px;padding:6px 0 2px}
+.mark{width:30px;height:30px;flex:none}
+h1{font-size:1.15rem;margin:0}
+a.back{color:var(--sub);text-decoration:none;font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0}
+h2{font-size:1rem;margin:0 0 8px}
+.ph{color:var(--sub);font-style:italic}
+footer{color:var(--sub);font-size:.78rem;margin-top:24px;padding-top:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg class="mark" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="#154734" stroke-width="3"/><path d="M14 25 L21 32 L35 16" fill="none" stroke="#154734" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <h1>About Stop The Split</h1>
+</header>
+<p><a class="back" href="https://claude.ai/artifact/KVAxX3j4z8GjuT7KbVQPwt">← Back to the constituency search</a></p>
+
+<div class="card">
+  <h2>Who's behind this</h2>
+  <p class="ph">[Your name — edit this section with as much or as little as you want people to know. A first name and general location is usually enough.]</p>
+</div>
+
+<div class="card">
+  <h2>Why I built this</h2>
+  <p class="ph">[A sentence or two on why this matters to you. Keep it factual about the tool — what it does and doesn't do — rather than making claims on behalf of any party or campaign.]</p>
+</div>
+
+<div class="card">
+  <h2>Get in touch</h2>
+  <p class="ph">[Email address, or a contact form link, or a social account — whatever you're comfortable making public. If you'd rather not take personal contact, you can point people to where you'll post corrections instead.]</p>
+</div>
+
+<div class="card">
+  <h2>Corrections</h2>
+  <p class="ph">[If you spot a seat that looks wrong, or want to flag a source, here's how to tell me — e.g. "open an issue at [link]" or "email me at [address]".]</p>
+</div>
+
+<div class="card">
+  <h2>Independence</h2>
+  <p>This site isn't affiliated with, endorsed by, or funded by any political party, candidate, or campaign. It's built from publicly available polling data, sourced and linked throughout. Party colours are used only to identify parties, not as an endorsement by those parties.</p>
+</div>
+
+<footer>Stop The Split · not affiliated with any party or pollster.</footer>
+</div>
+</body>
+</html>
