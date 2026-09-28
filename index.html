@@ -4,53 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Stop The Split — Tactical Voting Guide</title>
-<!--
-  Google AdSense setup:
-  1) Once this is live on your own domain and your AdSense account is approved for it,
-     paste the auto ads loader script Google gives you right here, e.g.:
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-  2) For each placeholder div below (class="ad-slot"), replace its contents with the
-     <ins class="adsbygoogle">...</ins> unit code Google gives you for that slot, and add
-     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> right after it.
--->
+<meta name="description" content="Find out which party is best placed to beat Reform in your UK constituency, using independent YouGov MRP polling. Every GB constituency covered.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='white' stroke='%23154734' stroke-width='3'/%3E%3Cpath d='M14 25 L21 32 L35 16' fill='none' stroke='%23154734' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4066582419214843"
      crossorigin="anonymous"></script>
 <style>
 :root{
-  --bg:#f7f8fa; --card:#ffffff; --ink:#15171c; --sub:#5b6270; --line:#e3e6ea;
-  --accent:#154734; --accent2:#0a2e22;
+  --bg:#f7f8fa; --card:#ffffff; --ink:#15171c; --sub:#5b6270; --line:#e3e6ea; --accent:#154734;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; }
+  :root:not([data-theme="light"]){ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; --accent:#3aa17e; }
 }
-:root[data-theme="dark"]{ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; }
+:root[data-theme="dark"]{ --bg:#0f1115; --card:#171a20; --ink:#eef0f3; --sub:#a2a8b3; --line:#2a2e37; --accent:#3aa17e; }
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.45}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
 .wrap{max-width:720px;margin:0 auto;padding:20px 16px 60px}
-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0 2px}
-.brand{display:flex;align-items:center;gap:10px}
 .mark{width:34px;height:34px;flex:none}
-h1{font-size:1.3rem;margin:0;letter-spacing:-0.02em}
-.tag{color:var(--sub);font-size:.85rem;margin-top:2px}
-a.nav{color:var(--sub);text-decoration:none;font-size:.85rem;white-space:nowrap}
-.hero{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:16px;padding:22px 18px;margin:16px 0}
-.hero h2{margin:0 0 6px;font-size:1.15rem}
-.hero p{margin:0 0 14px;opacity:.9;font-size:.92rem}
-.searchbox{position:relative}
-.searchrow{display:flex;gap:8px}
-input[type=text]{flex:1;padding:12px 14px;border-radius:10px;border:none;font-size:1rem;width:100%}
-button{padding:12px 16px;border-radius:10px;border:none;background:#fff;color:var(--accent2);font-weight:700;font-size:.95rem}
-#suggest{display:none;margin-top:8px;background:#fff;border-radius:10px;max-height:230px;overflow-y:auto;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-#suggest .s-item{padding:10px 14px;color:#15171c;font-size:.9rem;border-bottom:1px solid #eee;cursor:pointer}
-#suggest .s-item:last-child{border-bottom:none}
-#suggest .s-item small{display:block;color:#6b7280;font-size:.75rem}
-#suggest .s-hint{padding:8px 14px;color:#8a8f99;font-size:.72rem;text-transform:uppercase;letter-spacing:.03em}
-.pchelp{font-size:.8rem;opacity:.92;margin-top:10px;line-height:1.5}
-.pchelp a{color:#fff}
+a{color:var(--ink)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+footer{color:var(--sub);font-size:.78rem;margin-top:24px;padding-top:14px;border-top:1px solid var(--line)}
+footer a{color:var(--sub)}
+footer p{margin:0 0 6px}
+
+header.top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding:6px 0 2px}
+.brand{display:flex;align-items:center;gap:10px}
+.titlerow{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 10px}
+h1{font-size:1.3rem;margin:0;letter-spacing:-0.02em}
+.tagline{font-size:.8rem;font-weight:400;color:var(--sub);letter-spacing:.01em}
+.tag{color:var(--sub);font-size:.85rem;margin-top:2px}
+.topnav{display:flex;gap:18px}
+.topnav a{color:var(--sub);text-decoration:none;font-size:.9rem;font-weight:600}
+.topnav a:hover{color:var(--ink)}
+
+.finder{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;padding:24px 20px 22px;margin:18px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.finder h2{margin:0 0 10px;font-size:1.25rem;line-height:1.25;letter-spacing:-.01em}
+.finder .lead{margin:0 0 22px;color:var(--sub);font-size:.95rem}
+.finder label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--sub);margin-bottom:6px}
+.searchrow{display:flex;gap:8px}
+.inputwrap{position:relative;flex:1}
+.inputwrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--sub);pointer-events:none}
+input[type=text]{width:100%;padding:13px 14px 13px 40px;border-radius:10px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font-size:1rem}
+input[type=text]:focus{outline:none;border-color:var(--accent);background:var(--card)}
+.finder button{padding:0 20px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-weight:700;font-size:.95rem;cursor:pointer}
+#suggest{display:none;margin-top:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;max-height:230px;overflow-y:auto;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+#suggest .s-item{padding:10px 14px;color:var(--ink);font-size:.9rem;border-bottom:1px solid var(--line);cursor:pointer}
+#suggest .s-item:last-child{border-bottom:none}
+#suggest .s-item small{display:block;color:var(--sub);font-size:.75rem}
+#suggest .s-hint{padding:8px 14px;color:var(--sub);font-size:.72rem;text-transform:uppercase;letter-spacing:.03em}
+.pchelp{margin:22px 0 0;font-size:.85rem;color:var(--sub);line-height:1.5}
+.pchelp a{color:var(--ink)}
+
 .result{display:none}
 .headline{font-size:1.05rem;font-weight:700;margin:0 0 4px}
 .headline.soft{font-size:1rem;font-weight:600}
@@ -62,7 +68,7 @@ button{padding:12px 16px;border-radius:10px;border:none;background:#fff;color:va
 .bar-range{color:var(--sub);font-size:.72rem;margin-top:2px}
 .chip{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.72rem;font-weight:700;color:#fff}
 .badge{display:inline-block;padding:2px 7px;border-radius:6px;font-size:.68rem;font-weight:700}
-.badge.close{background:rgba(21,71,52,.15);color:var(--accent)}
+.badge.close{background:rgba(58,161,126,.18);color:var(--accent)}
 .badge.notclose{background:rgba(120,120,120,.15);color:var(--sub)}
 .note{font-size:.8rem;color:var(--sub);margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
 .notfound{display:none;font-size:.9rem;color:var(--sub);padding-top:2px}
@@ -74,40 +80,48 @@ th{color:var(--sub);font-weight:600;font-size:.72rem;text-transform:uppercase;le
 .mini{font-size:.72rem;padding:1px 6px}
 .tblwrap{overflow-x:auto;max-height:480px;overflow-y:auto}
 tr.notclose{opacity:.55}
-details{margin:14px 0}
-summary{cursor:pointer;font-weight:700;font-size:.92rem;padding:4px 0}
-.src{font-size:.82rem;color:var(--sub);margin:6px 0}
-.src a{color:var(--ink)}
-.warn{background:rgba(200,120,20,.12);border:1px solid rgba(200,120,20,.35);border-radius:10px;padding:10px 12px;font-size:.82rem;margin:10px 0}
-footer{color:var(--sub);font-size:.78rem;margin-top:24px;padding-top:14px;border-top:1px solid var(--line)}
-.ad-slot{background:var(--card);border:1px dashed var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--sub);font-size:.72rem;text-align:center;padding:8px;margin:14px 0}
-.ad-slot.banner{min-height:100px}
-.ad-slot.rect{min-height:250px}
+
+.how h3{font-size:1.05rem;margin:28px 0 4px}
+.qa{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--card)}
+.qa summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;font-size:.92rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-weight:400;color:var(--sub);font-size:1.3rem;line-height:1}
+.qa[open] summary::after{content:"\2212"}
+.qa .ans{padding:0 16px 14px;font-size:.86rem;color:var(--sub)}
+.qa .ans p{margin:0 0 10px}
+.qa .ans p:last-child{margin-bottom:0}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
+<header class="top">
   <div class="brand">
-    <svg class="mark" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="#154734" stroke-width="3"/><path d="M14 25 L21 32 L35 16" fill="none" stroke="#154734" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <div><h1>Stop The Split</h1><div class="tag">A tactical-voting guide, built from public polling</div></div>
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="#154734" stroke-width="3"/><path d="M14 25 L21 32 L35 16" fill="none" stroke="#154734" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div>
+      <div class="titlerow"><h1>Stop The Split</h1><span class="tagline">Stop Reform and Restore</span></div>
+      <div class="tag">A tactical-voting guide, built from public polling</div>
+    </div>
   </div>
-  <a class="nav" href="about.html">About</a>
+  <nav class="topnav" aria-label="Main"><a href="about.html">About</a><a href="support.html">Support</a></nav>
 </header>
 
-<div class="hero">
-  <h2>Find the party best placed to beat Reform in your seat</h2>
-  <p>Start typing your constituency name — every GB constituency is covered. We're not affiliated with any party, this is a data tool built from independent national polling.</p>
+<main>
+<section class="finder" aria-labelledby="finder-h">
+  <h2 id="finder-h">Find the party best placed to beat Reform in your seat</h2>
+  <p class="lead">Start typing your constituency name — every GB constituency is covered. We're not affiliated with any party; this is a data tool built from independent national polling.</p>
   <div class="searchbox">
+    <label for="q">Your constituency</label>
     <div class="searchrow">
-      <input id="q" type="text" placeholder="Type your constituency name…" autocomplete="off">
-      <button onclick="go()">Check</button>
+      <div class="inputwrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="text" placeholder="e.g. Broxtowe" autocomplete="off">
+      </div>
+      <button type="button" onclick="go()">Check</button>
     </div>
     <div id="suggest"></div>
   </div>
-  <p class="pchelp">Don't know your constituency? Look it up by postcode on Parliament's official <a href="https://members.parliament.uk/FindYourMP" target="_blank">Find Your MP tool ↗</a>, then come back and type the name above. (We can't auto-detect it from a postcode here — see "How this works" below for why.)</p>
-</div>
-
+  <p class="pchelp">Not sure which constituency you're in? Look it up by postcode on Parliament's official <a href="https://members.parliament.uk/FindYourMP" target="_blank" rel="noopener">Find Your MP tool ↗</a>, then type the name above.</p>
+</section>
 
 <div class="card result" id="result"></div>
 <div class="card notfound" id="notfound">
@@ -120,21 +134,41 @@ footer{color:var(--sub);font-size:.78rem;margin-top:24px;padding-top:14px;border
   <div class="tblwrap"><table id="tbl"><thead><tr><th>Constituency</th><th>Reform</th><th>Best alternative</th><th>Gap</th><th>Close?</th></tr></thead><tbody></tbody></table></div>
 </div>
 
-<details class="card">
-<summary>How this works, and its limits</summary>
-<div class="src">
-<p><b>Primary source:</b> YouGov's Westminster MRP model, published 24 Sept 2026 — fieldwork 23 Aug–18 Sept 2026, 16,758 respondents, independent (commissioned by YouGov itself, not any party). <a href="https://yougov.com/en-gb/articles/55618-yougov-mrp-shows-labour-would-be-the-largest-party-in-a-hung-parliament-were-an-election-held-tomorrow" target="_blank">Read the write-up</a> · <a href="https://ygo-assets-websites-editorial-emea.yougov.net/documents/Internal_YouGovMRP_2609.csv" target="_blank">full seat-by-seat data (CSV)</a>, including the 95% credible interval (high/low bound) behind every number on this page.</p>
-<p><b>National tactical-vote willingness:</b> YouGov, 23 Sept 2026 — <a href="https://yougov.com/en-gb/articles/55613-what-is-the-tactical-voting-landscape-in-september-2026" target="_blank">"What is the tactical voting landscape in September 2026?"</a>. Labour-vs-Reform head-to-head: Labour 41%, Reform 26%. Conservative-vs-Reform: Conservatives 35%, Reform 20%.</p>
-<div class="warn"><b>About the Electoral Calculus / Find Out Now poll (24 Sept 2026):</b> that poll was <a href="https://www.electoralcalculus.co.uk/blogs/ec_vipoll_20260924.html" target="_blank">commissioned by Restore Britain</a> — the party this tool excludes from recommendations. Worth knowing before treating its "tactical voting saves Reform 43 seats" framing as neutral. We use the independent YouGov MRP instead.</div>
-<p><b>Cross-check:</b> <a href="https://www.pollcheck.co.uk/constituencies/battlegrounds/" target="_blank">PollCheck.co.uk</a> runs a continuously-updated swingometer (not a full MRP) against a rolling 7-poll average. It broadly agrees on which seats are close, though the two models disagree on individual seats by a few points — a reminder any single seat's rank can shift.</p>
-<p><b>How "close" is decided:</b> every constituency here shows Reform UK's vote share against the strongest other party — excluding Reform, Restore Britain, and other extreme parties. A seat counts as <b>close</b> when Reform's own plausible upper bound (from YouGov's 95% credible interval) reaches at least as high as the leading alternative's plausible lower bound — i.e. it's statistically plausible the race could go either way, not just that the two headline numbers are near each other. This is deliberately more inclusive than a simple points-based cutoff, because MRP estimates at constituency level carry real uncertainty (typically ±6-10 points). Of 632 GB constituencies, 401 meet this bar. The "gap" column shows the size of that lead either way, as a plain positive number of points.</p>
-<p><b>Coverage:</b> all 632 GB constituencies (Northern Ireland isn't covered by this MRP). Every seat is searchable and listed in the table below, whether or not it's currently close.</p>
-<p><b>Postcode lookup:</b> a published web page like this one can't call outside services live (a platform-level restriction, not a choice), and we don't have a verified, complete postcode-to-constituency dataset we could safely bake in — a wrong match in a voting tool is a real problem, not a cosmetic one. So postcode lookup is a two-step hand-off to Parliament's own official tool rather than one seamless box.</p>
-<p><b>Worth weighing the other side:</b> tactical-voting models are estimates, not certainties. Some people think voting tactically undermines honest representation, or that a party with real, substantial support (Reform is currently polling in the low-to-mid 20s nationally) shouldn't be treated as illegitimate. This tool doesn't take a view on that — it tries to answer "given the current numbers, who's best placed to beat them here" as transparently as possible.</p>
-</div>
-</details>
+<section class="how" aria-labelledby="how-h">
+  <h3 id="how-h">How this works, and its limits</h3>
 
-<footer>Independent project, not affiliated with any party or pollster. Party colours are used descriptively to identify parties, not as an endorsement by those parties. Data snapshot: 24–25 Sept 2026.</footer>
+  <details class="qa"><summary>Where does the data come from?</summary><div class="ans">
+    <p>YouGov's Westminster MRP model, published 24 Sept 2026 — fieldwork 23 Aug–18 Sept 2026, 16,758 respondents, independent (commissioned by YouGov itself, not any party).</p>
+    <p><a href="https://yougov.com/en-gb/articles/55618-yougov-mrp-shows-labour-would-be-the-largest-party-in-a-hung-parliament-were-an-election-held-tomorrow" target="_blank" rel="noopener">Read the write-up</a> · <a href="https://ygo-assets-websites-editorial-emea.yougov.net/documents/Internal_YouGovMRP_2609.csv" target="_blank" rel="noopener">Full seat-by-seat data (CSV)</a>, including the 95% credible interval (high/low bound) behind every number on this page.</p>
+  </div></details>
+
+  <details class="qa"><summary>How willing are voters to vote tactically?</summary><div class="ans">
+    <p>YouGov, 23 Sept 2026 — <a href="https://yougov.com/en-gb/articles/55613-what-is-the-tactical-voting-landscape-in-september-2026" target="_blank" rel="noopener">"What is the tactical voting landscape in September 2026?"</a>. In a Labour-vs-Reform head-to-head, Labour 41%, Reform 26%. In a Conservative-vs-Reform head-to-head, Conservatives 35%, Reform 20%.</p>
+  </div></details>
+
+  <details class="qa"><summary>What about the Electoral Calculus poll?</summary><div class="ans">
+    <p>The Electoral Calculus / Find Out Now poll (24 Sept 2026) was <a href="https://www.electoralcalculus.co.uk/blogs/ec_vipoll_20260924.html" target="_blank" rel="noopener">commissioned by Restore Britain</a> — the party this tool excludes from recommendations. That's worth knowing before treating its "tactical voting saves Reform 43 seats" framing as neutral, so this site uses the independent YouGov MRP instead.</p>
+  </div></details>
+
+  <details class="qa"><summary>Is there a cross-check?</summary><div class="ans">
+    <p><a href="https://www.pollcheck.co.uk/constituencies/battlegrounds/" target="_blank" rel="noopener">PollCheck.co.uk</a> runs a continuously-updated swingometer (not a full MRP) against a rolling 7-poll average. It broadly agrees on which seats are close, though the two models disagree on individual seats by a few points — a reminder that any single seat's rank can shift.</p>
+  </div></details>
+
+  <details class="qa"><summary>How is a constituency judged "close"?</summary><div class="ans">
+    <p>Every constituency shows Reform UK's vote share against the strongest other party — excluding Reform, Restore Britain, and other extreme parties. A seat counts as <b>close</b> when Reform's own plausible upper bound (from YouGov's 95% credible interval) reaches at least as high as the leading alternative's plausible lower bound — i.e. it's statistically plausible the race could go either way, not just that the two headline numbers are near each other.</p>
+    <p>This is deliberately more inclusive than a simple points-based cutoff, because MRP estimates at constituency level carry real uncertainty (typically ±6-10 points). Of 632 GB constituencies, 401 meet this bar. The "gap" column shows the size of that lead either way, as a plain positive number of points.</p>
+  </div></details>
+
+  <details class="qa"><summary>Which constituencies are covered?</summary><div class="ans">
+    <p>All 632 GB constituencies (Northern Ireland isn't covered by this MRP). Every constituency is searchable and listed in the table above, whether or not it's currently close.</p>
+  </div></details>
+</section>
+</main>
+
+<footer>
+  <p>Independent project, not affiliated with any party or pollster. Party colours are used descriptively to identify parties, not as an endorsement by those parties. Data snapshot: 24–25 Sept 2026.</p>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+</footer>
 </div>
 
 <script>
